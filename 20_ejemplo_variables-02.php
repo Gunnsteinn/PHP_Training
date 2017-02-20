@@ -4,6 +4,7 @@
 	$int1 = 100;   // int
 	$int2 = 1000;  // int
 	$int3 = 10000; // int
+	$str = " => $int1 <= <br/> => $int2 <= <br/> => $int3 <= <br/>";
 
-	echo  " => $int1 <= <br/> => $int2 <= <br/> => $int3 <= <br/>"; // imprime las variables enteras como caracteres. 
+	echo  $str; // imprime las variables enteras como caracteres. 
 ?>

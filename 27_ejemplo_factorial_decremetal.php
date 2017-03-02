@@ -77,6 +77,7 @@
 			.box p{
 			  font-size:25px;
 			  text-align:center;
+			  margin: 35px;
 			}
 			.box p span{
 			  cursor:pointer;
@@ -86,33 +87,39 @@
 	</head>
 	<body>  
 		<?php
-			// define variables and set to empty values
-			$fact = ($_POST) ? $_POST["fact"] : 0;// numero
+			$fact = ($_POST) ? $_POST["fact"] : 0;
 		?>
 		<div class="vid-container">
 		  <div class="inner-container">
 		    <div class="box">
-		    <h1>PHP Form factorial</h1>
+		    <h1>Factorial</h1>
 				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >  
 				   	<input type="text" name="fact" placeholder="fact:" value="<?php echo $fact;?>">
 				  	<button type="submit" name="submit" value="Submit">Calculate</button>
 				</form>
-		      <p>
+		      	<p> 
 					<?php
 						$numero = $fact;
+						echo "Factorial de $numero = ";
 						$factorial = 1;
-						if ($numero > 0) {
-							for ($i=1; $i <= $numero; $i++) { 
-								$factorial = $factorial * $i;
+						for($i = $numero; $i > 0; $i--)
+						{
+							$factorial *= $i;
+						   	echo "$i"; 
+							if ($i == 1) {
+								echo " = "; 
+							}
+							else{
+								echo " x ";
 							}
 						}
+						echo "$factorial";
 					?>
-		      		<?php echo "Your Result:".$factorial; ?></p>
+				</p>
 		    </div>
-
 		  </div>
 		</div>
 	</body>
-</html>
+</html> 
 
 

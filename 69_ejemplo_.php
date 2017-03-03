@@ -1,4 +1,4 @@
- <!-- 39.-Ordenar una matriz de M filas y N columnas por la primera columnautilizando el m‚todo SHELL (por insercion). -->
+ <!-- 39.-Ordenar una matriz de M filas y N columnas por la primera columna utilizando el metodo SHELL (por insercion). -->
 
 <!DOCTYPE HTML>  
 <html>
@@ -93,14 +93,36 @@
 		    	<h1>PHP Form factorial</h1>
 		     	 <p>
 					<?php
-						$tabla5 = 1;
-						$i = 1;
-						do {
-						 	$tabla5 = $i * 5;
-							echo "5 x".$i.": ".$tabla5."</br>";
-							$i++;
-						 } while ($tabla5 < 50);
-					?>
+					 //Ordenamiento por Shell
+					    function ordenamientoShell($A,$n)
+					      	{
+					          	for($inc = 1 ; $inc<$n;$inc=$inc*3+1); 
+					        		while ($inc > 0)
+					        		{
+					            		for ($i=$inc; $i < $n; $i++)
+					            		{
+					                  		$j = $i;
+					                  		$temp = $A[$i];
+					                  		while (($j >= $inc) && ($A[$j-$inc] > $temp))
+					                  		{
+					                      		$A[$j] = $A[$j - $inc];
+					                      		$j = $j - $inc;
+					                  		}
+					                  		$A[$j] = $temp;
+					            		}
+					           			$inc/= 2;
+					        		}
+					            return $A;
+					      	}
+					      function main()
+					      {
+					          $VectorA=array(5,4,3,2,1);
+					          $VectorB=ordenamientoShell($VectorA,sizeof($VectorA));
+					          for($i=0;$i<sizeof($VectorB);$i++)
+					              echo $VectorB[$i]."\n";
+					      }
+					      main();
+					  ?>
 				</p>
 		    </div>
 		  </div>

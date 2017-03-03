@@ -1,5 +1,5 @@
- <!-- 49.-Hacer un pseudocodigo que nos permita dar altas en el fichero DATOS.DAT deorganizaci¢n directa, controlando las altas duplicadas. Los campos son:DNI, NOMBRE, APELLIDOS Y PUNTERO para ambos archivos.Algoritmo( dn ) =- Blanco: grabamos el registro en esa posici¢n y ponemos el puntero acero.- Cero: comprobamos cu l es el valor del campo puntero. Si es cero,grabamos el registro en esa posici¢n (no hay sinonimos) y si es distintode cero, comparamos el valor con el campo DNI, si son iguales, altaduplicada y dejamos de leer, y si no son iguales, introducimos el restode la informacion.- Distinto de cero: hay un registro grabado en esa posicion. Si es igualal dato introducido, alta duplicada, y si no son iguales, comprobamos elvalor del puntero, si es cero grabamos el registro, y si no es cero, sies igual al campo DNI, alta duplicada y sino se graba la informacion enel archivo SINONIMOS.DAT. -->
-
+ <!-- 52.-Tenemos el fichero DATOS.DAT con la misma estructura anterior, que estaindexado por el campo DNI. Crear un programa que nos permita consultar unregistro siempre que queramos. -->
+ 
 <!DOCTYPE HTML>  
 <html>
 	<head>

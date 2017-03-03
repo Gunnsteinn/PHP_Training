@@ -1,4 +1,4 @@
- <!-- 8.-Hacer un pseudocodigo que solo nos permita introducir S o N.  -->
+<!-- 4.-Hacer un programa que imprima la suma de los 100 primeros numeros.  -->
 
 <!DOCTYPE HTML>  
 <html>
@@ -11,25 +11,21 @@
   			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-success">
 				<!-- Default panel contents -->
-				  	<div class="panel-heading text-center">100 to 0 with foreach</div>
+				  	<div class="panel-heading text-center">Sum of the first 100 numbers</div>
 				  	<div class="panel-body">
 						<?php
-							// creo array
-							$array = array();
-							for ($i=1; $i < 101; $i++) { 
-								array_push($array, $i);
-							}
-							// recorro e imprimo el array
 							echo "Valores: ";
-							foreach ($array as $valor) {
-								if ($valor%2 == 0) {
-									if ($valor != 100) {
-										echo $valor." - ";
-									}else{
-										echo $valor;	
-									}
+							$valor =0;
+							for ($i=1; $i < 101; $i++) {
+								$valor += $i;
+								echo $i;
+								if ($i != 100) {
+									echo " + ";
+								}else{
+									echo " = ";	
 								}
 							}
+							echo $valor;
 						?>
 				  	</div>
 				</div>	
@@ -37,3 +33,5 @@
 		</div>
 	</body>
 </html>
+
+

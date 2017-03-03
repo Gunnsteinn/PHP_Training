@@ -91,7 +91,7 @@
 			// define variables and set to empty values
 			$height = ($_POST) ? $_POST["height"] : 0;// altura
 			$width = ($_POST) ? $_POST["width"] : 0;// anchura
-		?>
+		?> 
 		<div class="vid-container">
 		  <div class="inner-container">
 		    <div class="box">

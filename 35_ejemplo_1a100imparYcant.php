@@ -1,4 +1,4 @@
- <!-- 8.-Hacer un pseudocodigo que solo nos permita introducir S o N.  -->
+<!-- 5.-Hacer un pseudocódigo que imprima los numeros impares hasta el 100 y que imprima cuantos impares hay. -->
 
 <!DOCTYPE HTML>  
 <html>
@@ -11,7 +11,7 @@
   			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-success">
 				<!-- Default panel contents -->
-				  	<div class="panel-heading text-center">100 to 0 with foreach</div>
+				  	<div class="panel-heading text-center">1 to 100 odd & quantity</div>
 				  	<div class="panel-body">
 						<?php
 							// creo array
@@ -21,15 +21,18 @@
 							}
 							// recorro e imprimo el array
 							echo "Valores: ";
+							$i = 0;
 							foreach ($array as $valor) {
-								if ($valor%2 == 0) {
-									if ($valor != 100) {
+								if ($valor%2 != 0) {
+									if ($valor != 99) {
 										echo $valor." - ";
+										$i++;
 									}else{
-										echo $valor;	
+										echo $valor."<br/>";	
 									}
 								}
 							}
+							echo "La cantidad de Impares es: ".$i;
 						?>
 				  	</div>
 				</div>	

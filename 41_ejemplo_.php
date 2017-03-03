@@ -1,4 +1,4 @@
-<!-- 11.-Imprimir y contar los multiplos de 3 desde la unidad hasta un numero queintroducimos por teclado. -->
+<!-- 11.-Imprimir y contar los multiplos de 3 desde la unidad hasta un numero que introducimos por teclado. -->
 
 <!DOCTYPE HTML>  
 <html>

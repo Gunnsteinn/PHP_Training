@@ -1,4 +1,4 @@
- <!-- 8.-Hacer un pseudocodigo que solo nos permita introducir S o N.  -->
+<!-- 2.-Hacer un pseudocodigo que imprima los numeros del 100 al 0, en ordendecreciente. -->
 
 <!DOCTYPE HTML>  
 <html>
@@ -11,23 +11,21 @@
   			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-success">
 				<!-- Default panel contents -->
-				  	<div class="panel-heading text-center">100 to 0 with foreach</div>
+				  	<div class="panel-heading text-center">100 to 0 with foreach - To decrease</div>
 				  	<div class="panel-body">
 						<?php
 							// creo array
 							$array = array();
-							for ($i=1; $i < 101; $i++) { 
+							for ($i=100; $i >= 0; $i--) { 
 								array_push($array, $i);
 							}
 							// recorro e imprimo el array
 							echo "Valores: ";
 							foreach ($array as $valor) {
-								if ($valor%2 == 0) {
-									if ($valor != 100) {
-										echo $valor." - ";
-									}else{
-										echo $valor;	
-									}
+								if ($valor != 0) {
+									echo $valor." - ";
+								}else{
+									echo $valor;	
 								}
 							}
 						?>
@@ -37,3 +35,4 @@
 		</div>
 	</body>
 </html>
+

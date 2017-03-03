@@ -1,4 +1,4 @@
- <!-- 8.-Hacer un pseudocodigo que solo nos permita introducir S o N.  -->
+<!-- 1.-Hacer un pseudocodigo que imprima los numeros del 1 al 100. -->
 
 <!DOCTYPE HTML>  
 <html>
@@ -11,7 +11,7 @@
   			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-success">
 				<!-- Default panel contents -->
-				  	<div class="panel-heading text-center">100 to 0 with foreach</div>
+				  	<div class="panel-heading text-center">1 to 100 with foreach - To increase</div>
 				  	<div class="panel-body">
 						<?php
 							// creo array
@@ -22,12 +22,10 @@
 							// recorro e imprimo el array
 							echo "Valores: ";
 							foreach ($array as $valor) {
-								if ($valor%2 == 0) {
-									if ($valor != 100) {
-										echo $valor." - ";
-									}else{
-										echo $valor;	
-									}
+								if ($valor != 100) {
+									echo $valor." - ";
+								}else{
+									echo $valor;	
 								}
 							}
 						?>
@@ -37,3 +35,5 @@
 		</div>
 	</body>
 </html>
+
+

@@ -1,4 +1,4 @@
- <!-- 8.-Hacer un pseudocodigo que solo nos permita introducir S o N.  -->
+<!-- 3.-Hacer un pseudocodigo que imprima los numeros pares entre 0 y 100. -->
 
 <!DOCTYPE HTML>  
 <html>
@@ -11,7 +11,7 @@
   			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-success">
 				<!-- Default panel contents -->
-				  	<div class="panel-heading text-center">100 to 0 with foreach</div>
+				  	<div class="panel-heading text-center">1 to 100 even number</div>
 				  	<div class="panel-body">
 						<?php
 							// creo array
@@ -37,3 +37,5 @@
 		</div>
 	</body>
 </html>
+
+
